@@ -8,13 +8,29 @@
     <title> Magic Mirror Home Screen </title>
 </head>
     <h1>
-        Magic Mirror Home Screen
-    </h1>
+        <p><span id="datetime"></span></p>
 
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+</script>
+    </h1>
+<body>
+    
+</body>
     <ul>
         <div class="tab-content">
             <div class="latinx">
                 <a href = "./latinxHomePage.html">
+                    <img src="LatinxLogo.png" alt="None">
+                </a>
+            </div>
+        </div>
+    </ul>
+    <ul>
+        <div class="tab-content">
+            <div class="african">
+                <a href = "./AfricanAncensretyHomePage.html">
                     <img src="LatinxLogo.png" alt="None">
                 </a>
             </div>
