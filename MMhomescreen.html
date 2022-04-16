@@ -5,29 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="latinxlogostyle.css" rel="stylesheet">
-    <title> Magic Mirror Home Screen </title>
+    <title> Bosch BRG Group </title>
 </head>
+<style>
+    body {
+      background-image: url('Bosch background .png');
+      background-size: 1300px;
+      background-repeat: no-repeat;
+    }
+    </style>
     <h1>
-        <p><span id="datetime"></span></p>
+        <p><span id="date"></span></p>
 
 <script>
-var dt = new Date();
-document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+window.onload = setInterval(clock,1000);
+function clock()
+{
+    var d = new Date();
+    var date = d.getDate();
+    var year = d.getFullYear();
+    var month = d.getMonth();
+    var monthArr = ["January", "February","March", "April", "May", "June", "July", "August", "September", "October", "November","December"];
+    month = monthArr[month];
+    document.getElementById("date").innerHTML=date+" "+month+", "+year;
+}
 </script>
     </h1>
 <body>
-    <style>
-        body {
-          background-image: url('img_girl.jpg');
-        }
-        </style>
 </body>
     <ul>
         <div class="tab-content">
             <div class="latinx">
                 <a href = "./latinxHomePage.html">
                     <figure>
-                    <img src="hispanics.png" style=" width: 150px; height: 150px; position: absolute; top: 150px; left: 600px; "alt="None">
+                    <img src="hispanics.png" style=" width: 80px; height: 80px; position: absolute; top: 100px; left: 400px; "alt="None">
                     <figcaption> </figcaption>
                     </figure>
                 </a>
@@ -38,7 +49,7 @@ document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
         <div class="tab-content">
             <div class="african">
                 <a href = "./African Ancestry HomePage.html">
-                    <img src="african.png" style=" width: 150px; height: 150px; position: absolute; top: 150px; left: 500px; "alt="None">
+                    <img src="african.png" style=" width: 80px; height: 80px; position: absolute; top: 100px; left: 300px; "alt="None">
                     <title>African</title>
                 </a>
             </div>
@@ -48,7 +59,7 @@ document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
         <div class="tab-content">
             <div class="LBGT">
                 <a href = "./LBGT.html">
-                    <img src="lgbt.png" style=" width: 150px; height: 150px; position: absolute; top: 150px; left: 400px; "alt="None">
+                    <img src="lgbt.png" style=" width:80px; height: 80px; position: absolute; top: 100px; left: 200px; "alt="None">
                 </a>
             </div>
         </div>
@@ -57,7 +68,7 @@ document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
         <div class="tab-content">
             <div class="asians">
                 <a href = "./Asians HomePage.html">
-                    <img src="asians.png" style="width: 150px; height: 150px; position: absolute; top: 400px; left: 600px;  "alt="None">
+                    <img src="asians.png" style="width: 80px; height: 80px; position: absolute; top: 220px; left: 100px;  "alt="None">
                 </a>
             </div>
         </div>
@@ -66,7 +77,7 @@ document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
         <div class="tab-content">
             <div class="Interfaith">
                 <a href = "./Interfaith.html">
-                    <img src="interfaith.png" style=" width: 150px; height: 150px; position: absolute; top: 400px; left: 500px; "alt="None">
+                    <img src="interfaith.png" style=" width: 80px; height: 80px; position: absolute; top: 220px; left: 200px; "alt="None">
                     <style>
 
                     </style>
@@ -78,7 +89,7 @@ document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
         <div class="tab-content">
             <div class="Veterans">
                 <a href = "./Veterans.html">
-                    <img src="veterans.png" style=" width: 150px; height: 150px; position: absolute; top: 400px; left: 300px; "alt="None">
+                    <img src="veterans.png" style=" width: 80px; height: 80px; position: absolute; top: 220px; left: 300px; "alt="None">
                 </a>
             </div>
         </div>
@@ -87,7 +98,7 @@ document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
         <div class="tab-content">
             <div class="Women">
                 <a href = "./Women.html">
-                    <img src="women.png" style=" width: 150px; height: 150px; position: absolute; top: 400px; left: 400px; "alt="None">
+                    <img src="women.png" style=" width: 80px; height: 80px; position: absolute; top: 220px; left: 400px; "alt="None">
                 </a>
             </div>
         </div>
@@ -96,7 +107,7 @@ document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
         <div class="tab-content">
             <div class="Generations">
                 <a href = "./Generations.html">
-                    <img src="generations.png" style=" width: 150px; height: 150px; position: absolute; top: 150px; left: 300px; "alt="None">
+                    <img src="generations.png" style=" width: 80px; height: 80px; position: absolute; top: 100px; left: 100px; "alt="None">
                    </a>
             </div>
         </div>
