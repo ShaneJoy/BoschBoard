@@ -4,117 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="latinxlogostyle.css" rel="stylesheet">
+    <link href="imgStyle.css" rel="stylesheet">
     <title> Bosch BRG Group </title>
 </head>
-<style>
-    body {
-      background-image: url('Bosch background .png');
-      background-size: 1300px;
-      background-repeat: no-repeat;
-    }
-    </style>
-    <h1>
-        <p><span id="date"></span></p>
-
-<script>
-window.onload = setInterval(clock,1000);
-function clock()
-{
-    var d = new Date();
-    var date = d.getDate();
-    var year = d.getFullYear();
-    var month = d.getMonth();
-    var monthArr = ["January", "February","March", "April", "May", "June", "July", "August", "September", "October", "November","December"];
-    month = monthArr[month];
-    document.getElementById("date").innerHTML=date+" "+month+", "+year;
-}
-</script>
-    </h1>
-<body>
-    <p>
-        Bosch p
-    </p>
-</body>
+<body style="width:100px">
     <ul>
-        <div class="tab-content">
-            <div class="latinx">
-                <a href = "./latinxHomePage.html">
-                    <img src="hispanics.png" style=" width: 80px; height: 80px; position: absolute; top: 100px; left: 400px; "alt="None">                  
-                </a>
-            </div>
-        </div>
-    </ul>
-    <ul>
-        <div class="tab-content">
-            <div class="african">
-                <a href = "./African Ancestry HomePage.html">
-                    <img src="african.png" style=" width: 80px; height: 80px; position: absolute; top: 100px; left: 300px; "alt="None">
-                    <title>African</title>
-                </a>
-            </div>
-        </div>
-    </ul>
-    
-    <ul>
-        <div class="tab-content">
-            <div class="LBGT">
-                <a href = "./LBGT.html">
-                    <Figure>
-                    <img src="lgbt.png" style=" width:80px; height: 80px; position: absolute; top: 100px; left: 200px; "alt="None">
-                   <Figcaption>Bosch</Figcaption>
-                    </Figure>
-                </a>
-            </div>
-        </div>
-    </ul>
-    <ul>
-        <div class="tab-content">
-            <div class="asians">
-                <a href = "./Asians HomePage.html">
-                    <img src="asians.png" style="width: 80px; height: 80px; position: absolute; top: 220px; left: 100px;  "alt="None">
-                </a>
-            </div>
-        </div>
-    </ul>
-    <ul>
-        <div class="tab-content">
-            <div class="Interfaith">
-                <a href = "./Interfaith.html">
-                    <img src="interfaith.png" style=" width: 80px; height: 80px; position: absolute; top: 220px; left: 200px; "alt="None">
-                    <style>
-
-                    </style>
-                </a>
-            </div>
-        </div>
-    </ul>
-    <ul>
-        <div class="tab-content">
-            <div class="Veterans">
-                <a href = "./Veterans.html">
-                    <img src="veterans.png" style=" width: 80px; height: 80px; position: absolute; top: 220px; left: 300px; "alt="None">
-                </a>
-            </div>
-        </div>
-    </ul>
-    <ul>
-        <div class="tab-content">
-            <div class="Women">
-                <a href = "./Women.html">
-                    <img src="women.png" style=" width: 80px; height: 80px; position: absolute; top: 220px; left: 400px; "alt="None">
-                </a>
-            </div>
-        </div>
-    </ul>
-    <ul>
-        <div class="tab-content">
+        <div class="row1">
             <div class="Generations">
-                <a href = "./Generations.html">
-                    <img src="generations.png" style=" width: 80px; height: 80px; position: absolute; top: 100px; left: 100px; "alt="None">
-                   </a>
+                <a href="subPages/GenerationsPage.html">
+                    <img src="generations.png" alt="None">
+                </a>
+                <p>Generations</p>
+            </div>
+            <div class="Africans">
+                <a href="subPages/AfricanAncestryPage.html">
+                    <img src="african.png" alt="None">
+                </a>
+                <p>African Ancestry</p>
+            </div>
+            <div class="Women">
+                <a href="subPages/WomenAtBosch.html">
+                    <img src="women.png" alt="None">
+                </a>
+                <p>Women At Bosch</p>
+            </div>
+            <div class="Asians">
+                <a href="subPages/AsianAncestry.html">
+                    <img src="asians.png" alt="None">
+                </a>
+                <p>Asians At Bosch</p>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="Hispanics">
+                <a href="subPages/LatinxPage.html">
+                    <img src="hispanics.png" alt="None">
+                </a>
+                <p>Latinx At Bosch</p>
+            </div>
+            <div class="LGBT">
+                <a href="subPages/LGBTQPage.html">
+                    <img src="lgbt.png" alt="None">
+                </a>
+                <p>LGBT At Bosch</p>
+            </div>
+            <div class="Interfaith">
+                <a href="subPages/Interfaith.html">
+                    <img src="interfaith.png" alt="None">
+                </a>
+                <p>Interfaith</p>
+            </div>
+            <div class="Veterans">
+                <a href="subPages/VeteransPage.html">
+                    <img src="veterans.png" alt="None">
+                </a>
+                <p>Veterans At Bosch</p>
             </div>
         </div>
     </ul>
+</body>
 
 </html>
